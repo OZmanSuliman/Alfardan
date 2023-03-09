@@ -1,0 +1,1107 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D1A637729B9F27800075AFC /* AlfardanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A637629B9F27800075AFC /* AlfardanApp.swift */; };
+		2D1A637929B9F27800075AFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A637829B9F27800075AFC /* ContentView.swift */; };
+		2D1A637B29B9F27900075AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A637A29B9F27900075AFC /* Assets.xcassets */; };
+		2D1A637E29B9F27900075AFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A637D29B9F27900075AFC /* Preview Assets.xcassets */; };
+		2D1A638829B9F27900075AFC /* AlfardanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A638729B9F27900075AFC /* AlfardanTests.swift */; };
+		2D1A639229B9F27900075AFC /* AlfardanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A639129B9F27900075AFC /* AlfardanUITests.swift */; };
+		2D1A639429B9F27900075AFC /* AlfardanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A639329B9F27900075AFC /* AlfardanUITestsLaunchTests.swift */; };
+		2D1A63A329B9F3F700075AFC /* EnvironmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63A229B9F3F700075AFC /* EnvironmentManager.swift */; };
+		2D1A63A929B9F44D00075AFC /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63A829B9F44D00075AFC /* APIEndpoints.swift */; };
+		2D1A63AC29B9F48000075AFC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AB29B9F48000075AFC /* AppState.swift */; };
+		2D1A63AE29B9F4A100075AFC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AD29B9F4A100075AFC /* APIManager.swift */; };
+		2D1A63B029B9F4B700075AFC /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AF29B9F4B700075AFC /* DatabaseService.swift */; };
+		2D1A63B229B9F4C700075AFC /* UserDefaultInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B129B9F4C700075AFC /* UserDefaultInfo.swift */; };
+		2D1A63B629B9F50100075AFC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B529B9F50100075AFC /* Strings.swift */; };
+		2D1A63B829B9F55900075AFC /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B729B9F55900075AFC /* APIRequestProtocol.swift */; };
+		2D1A63BA29B9F56700075AFC /* APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B929B9F56700075AFC /* APIResponseProtocol.swift */; };
+		2D1A63BD29B9F6A300075AFC /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2D1A63BC29B9F6A300075AFC /* Realm */; };
+		2D1A63BF29B9F6A300075AFC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2D1A63BE29B9F6A300075AFC /* RealmSwift */; };
+		2D1A63C329B9F70900075AFC /* EnvironmentVariables.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A63C229B9F70900075AFC /* EnvironmentVariables.plist */; };
+		2D1A63FF29B9F79000075AFC /* UserDefaultInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B129B9F4C700075AFC /* UserDefaultInfo.swift */; };
+		2D1A640029B9F79000075AFC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B529B9F50100075AFC /* Strings.swift */; };
+		2D1A640129B9F79000075AFC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AD29B9F4A100075AFC /* APIManager.swift */; };
+		2D1A640229B9F79000075AFC /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AF29B9F4B700075AFC /* DatabaseService.swift */; };
+		2D1A640329B9F79000075AFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A637829B9F27800075AFC /* ContentView.swift */; };
+		2D1A640429B9F79000075AFC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AB29B9F48000075AFC /* AppState.swift */; };
+		2D1A640529B9F79000075AFC /* APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B929B9F56700075AFC /* APIResponseProtocol.swift */; };
+		2D1A640629B9F79000075AFC /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B729B9F55900075AFC /* APIRequestProtocol.swift */; };
+		2D1A640729B9F79000075AFC /* EnvironmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63A229B9F3F700075AFC /* EnvironmentManager.swift */; };
+		2D1A640829B9F79000075AFC /* AlfardanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A637629B9F27800075AFC /* AlfardanApp.swift */; };
+		2D1A640929B9F79000075AFC /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63A829B9F44D00075AFC /* APIEndpoints.swift */; };
+		2D1A640B29B9F79000075AFC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2D1A63FD29B9F79000075AFC /* RealmSwift */; };
+		2D1A640C29B9F79000075AFC /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2D1A63FB29B9F79000075AFC /* Realm */; };
+		2D1A640E29B9F79000075AFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A637D29B9F27900075AFC /* Preview Assets.xcassets */; };
+		2D1A640F29B9F79000075AFC /* EnvironmentVariables.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A63C229B9F70900075AFC /* EnvironmentVariables.plist */; };
+		2D1A641029B9F79000075AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A637A29B9F27900075AFC /* Assets.xcassets */; };
+		2D1A641A29B9F7BF00075AFC /* UserDefaultInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B129B9F4C700075AFC /* UserDefaultInfo.swift */; };
+		2D1A641B29B9F7BF00075AFC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B529B9F50100075AFC /* Strings.swift */; };
+		2D1A641C29B9F7BF00075AFC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AD29B9F4A100075AFC /* APIManager.swift */; };
+		2D1A641D29B9F7BF00075AFC /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AF29B9F4B700075AFC /* DatabaseService.swift */; };
+		2D1A641E29B9F7BF00075AFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A637829B9F27800075AFC /* ContentView.swift */; };
+		2D1A641F29B9F7BF00075AFC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AB29B9F48000075AFC /* AppState.swift */; };
+		2D1A642029B9F7BF00075AFC /* APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B929B9F56700075AFC /* APIResponseProtocol.swift */; };
+		2D1A642129B9F7BF00075AFC /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B729B9F55900075AFC /* APIRequestProtocol.swift */; };
+		2D1A642229B9F7BF00075AFC /* EnvironmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63A229B9F3F700075AFC /* EnvironmentManager.swift */; };
+		2D1A642329B9F7BF00075AFC /* AlfardanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A637629B9F27800075AFC /* AlfardanApp.swift */; };
+		2D1A642429B9F7BF00075AFC /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63A829B9F44D00075AFC /* APIEndpoints.swift */; };
+		2D1A642629B9F7BF00075AFC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2D1A641829B9F7BF00075AFC /* RealmSwift */; };
+		2D1A642729B9F7BF00075AFC /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2D1A641629B9F7BF00075AFC /* Realm */; };
+		2D1A642929B9F7BF00075AFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A637D29B9F27900075AFC /* Preview Assets.xcassets */; };
+		2D1A642A29B9F7BF00075AFC /* EnvironmentVariables.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A63C229B9F70900075AFC /* EnvironmentVariables.plist */; };
+		2D1A642B29B9F7BF00075AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A637A29B9F27900075AFC /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D1A638429B9F27900075AFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D1A636B29B9F27800075AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D1A637229B9F27800075AFC;
+			remoteInfo = Alfardan;
+		};
+		2D1A638E29B9F27900075AFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D1A636B29B9F27800075AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D1A637229B9F27800075AFC;
+			remoteInfo = Alfardan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D1A637329B9F27800075AFC /* Alfardan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alfardan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1A637629B9F27800075AFC /* AlfardanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfardanApp.swift; sourceTree = "<group>"; };
+		2D1A637829B9F27800075AFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2D1A637A29B9F27900075AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D1A637D29B9F27900075AFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D1A638329B9F27900075AFC /* AlfardanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlfardanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1A638729B9F27900075AFC /* AlfardanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfardanTests.swift; sourceTree = "<group>"; };
+		2D1A638D29B9F27900075AFC /* AlfardanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlfardanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1A639129B9F27900075AFC /* AlfardanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfardanUITests.swift; sourceTree = "<group>"; };
+		2D1A639329B9F27900075AFC /* AlfardanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfardanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2D1A63A229B9F3F700075AFC /* EnvironmentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentManager.swift; sourceTree = "<group>"; };
+		2D1A63A429B9F40E00075AFC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2D1A63A829B9F44D00075AFC /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		2D1A63AB29B9F48000075AFC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		2D1A63AD29B9F4A100075AFC /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		2D1A63AF29B9F4B700075AFC /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		2D1A63B129B9F4C700075AFC /* UserDefaultInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultInfo.swift; sourceTree = "<group>"; };
+		2D1A63B529B9F50100075AFC /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		2D1A63B729B9F55900075AFC /* APIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestProtocol.swift; sourceTree = "<group>"; };
+		2D1A63B929B9F56700075AFC /* APIResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseProtocol.swift; sourceTree = "<group>"; };
+		2D1A63C229B9F70900075AFC /* EnvironmentVariables.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EnvironmentVariables.plist; sourceTree = "<group>"; };
+		2D1A641429B9F79000075AFC /* Alfardan-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alfardan-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1A642F29B9F7BF00075AFC /* Alfardan-Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alfardan-Staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1A643029B9FA5E00075AFC /* Alfardan-Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alfardan-Staging-Info.plist"; sourceTree = "<group>"; };
+		2D1A643129B9FA5E00075AFC /* Alfardan-Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alfardan-Dev-Info.plist"; sourceTree = "<group>"; };
+		2D1A643229B9FA5E00075AFC /* Alfardan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alfardan-Info.plist"; sourceTree = "<group>"; };
+		2D1A643629B9FBA100075AFC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D1A637029B9F27800075AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1A63BF29B9F6A300075AFC /* RealmSwift in Frameworks */,
+				2D1A63BD29B9F6A300075AFC /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1A638029B9F27900075AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1A638A29B9F27900075AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1A640A29B9F79000075AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1A640B29B9F79000075AFC /* RealmSwift in Frameworks */,
+				2D1A640C29B9F79000075AFC /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1A642529B9F7BF00075AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1A642629B9F7BF00075AFC /* RealmSwift in Frameworks */,
+				2D1A642729B9F7BF00075AFC /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D1A636A29B9F27800075AFC = {
+			isa = PBXGroup;
+			children = (
+				2D1A637529B9F27800075AFC /* Alfardan */,
+				2D1A643629B9FBA100075AFC /* README.md */,
+				2D1A638629B9F27900075AFC /* AlfardanTests */,
+				2D1A639029B9F27900075AFC /* AlfardanUITests */,
+				2D1A637429B9F27800075AFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D1A637429B9F27800075AFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A637329B9F27800075AFC /* Alfardan.app */,
+				2D1A638329B9F27900075AFC /* AlfardanTests.xctest */,
+				2D1A638D29B9F27900075AFC /* AlfardanUITests.xctest */,
+				2D1A641429B9F79000075AFC /* Alfardan-Dev.app */,
+				2D1A642F29B9F7BF00075AFC /* Alfardan-Staging.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D1A637529B9F27800075AFC /* Alfardan */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A63A029B9F3C500075AFC /* Core */,
+				2D1A643329B9FB5000075AFC /* CustomViews */,
+				2D1A643429B9FB5F00075AFC /* Entities */,
+				2D1A643529B9FB6D00075AFC /* Flows */,
+				2D1A63B329B9F4E200075AFC /* Utilities */,
+				2D1A63C029B9F6B300075AFC /* Resources */,
+			);
+			path = Alfardan;
+			sourceTree = "<group>";
+		};
+		2D1A637C29B9F27900075AFC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A637D29B9F27900075AFC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2D1A638629B9F27900075AFC /* AlfardanTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A638729B9F27900075AFC /* AlfardanTests.swift */,
+			);
+			path = AlfardanTests;
+			sourceTree = "<group>";
+		};
+		2D1A639029B9F27900075AFC /* AlfardanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A639129B9F27900075AFC /* AlfardanUITests.swift */,
+				2D1A639329B9F27900075AFC /* AlfardanUITestsLaunchTests.swift */,
+			);
+			path = AlfardanUITests;
+			sourceTree = "<group>";
+		};
+		2D1A63A029B9F3C500075AFC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A63A129B9F3D700075AFC /* System */,
+				2D1A63A529B9F42400075AFC /* Networking */,
+				2D1A63AA29B9F47200075AFC /* Helpers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2D1A63A129B9F3D700075AFC /* System */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A637629B9F27800075AFC /* AlfardanApp.swift */,
+				2D1A63A229B9F3F700075AFC /* EnvironmentManager.swift */,
+				2D1A63A429B9F40E00075AFC /* Launch Screen.storyboard */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		2D1A63A529B9F42400075AFC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A63A729B9F43A00075AFC /* Requests */,
+				2D1A63A629B9F42D00075AFC /* Protocols */,
+				2D1A63A829B9F44D00075AFC /* APIEndpoints.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2D1A63A629B9F42D00075AFC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2D1A63A729B9F43A00075AFC /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A63B729B9F55900075AFC /* APIRequestProtocol.swift */,
+				2D1A63B929B9F56700075AFC /* APIResponseProtocol.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		2D1A63AA29B9F47200075AFC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A63AB29B9F48000075AFC /* AppState.swift */,
+				2D1A63AD29B9F4A100075AFC /* APIManager.swift */,
+				2D1A63AF29B9F4B700075AFC /* DatabaseService.swift */,
+				2D1A63B129B9F4C700075AFC /* UserDefaultInfo.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2D1A63B329B9F4E200075AFC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A63B429B9F4ED00075AFC /* Extentions */,
+				2D1A63B529B9F50100075AFC /* Strings.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2D1A63B429B9F4ED00075AFC /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		2D1A63C029B9F6B300075AFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A63C129B9F6C300075AFC /* InfoPlists */,
+				2D1A637C29B9F27900075AFC /* Preview Content */,
+				2D1A637A29B9F27900075AFC /* Assets.xcassets */,
+				2D1A63C229B9F70900075AFC /* EnvironmentVariables.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2D1A63C129B9F6C300075AFC /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A643229B9FA5E00075AFC /* Alfardan-Info.plist */,
+				2D1A643129B9FA5E00075AFC /* Alfardan-Dev-Info.plist */,
+				2D1A643029B9FA5E00075AFC /* Alfardan-Staging-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		2D1A643329B9FB5000075AFC /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		2D1A643429B9FB5F00075AFC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		2D1A643529B9FB6D00075AFC /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A637829B9F27800075AFC /* ContentView.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D1A637229B9F27800075AFC /* Alfardan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D1A639729B9F27900075AFC /* Build configuration list for PBXNativeTarget "Alfardan" */;
+			buildPhases = (
+				2D1A636F29B9F27800075AFC /* Sources */,
+				2D1A637029B9F27800075AFC /* Frameworks */,
+				2D1A637129B9F27800075AFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alfardan;
+			packageProductDependencies = (
+				2D1A63BC29B9F6A300075AFC /* Realm */,
+				2D1A63BE29B9F6A300075AFC /* RealmSwift */,
+			);
+			productName = Alfardan;
+			productReference = 2D1A637329B9F27800075AFC /* Alfardan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D1A638229B9F27900075AFC /* AlfardanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D1A639A29B9F27900075AFC /* Build configuration list for PBXNativeTarget "AlfardanTests" */;
+			buildPhases = (
+				2D1A637F29B9F27900075AFC /* Sources */,
+				2D1A638029B9F27900075AFC /* Frameworks */,
+				2D1A638129B9F27900075AFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D1A638529B9F27900075AFC /* PBXTargetDependency */,
+			);
+			name = AlfardanTests;
+			productName = AlfardanTests;
+			productReference = 2D1A638329B9F27900075AFC /* AlfardanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D1A638C29B9F27900075AFC /* AlfardanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D1A639D29B9F27900075AFC /* Build configuration list for PBXNativeTarget "AlfardanUITests" */;
+			buildPhases = (
+				2D1A638929B9F27900075AFC /* Sources */,
+				2D1A638A29B9F27900075AFC /* Frameworks */,
+				2D1A638B29B9F27900075AFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D1A638F29B9F27900075AFC /* PBXTargetDependency */,
+			);
+			name = AlfardanUITests;
+			productName = AlfardanUITests;
+			productReference = 2D1A638D29B9F27900075AFC /* AlfardanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2D1A63FA29B9F79000075AFC /* Alfardan-Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D1A641129B9F79000075AFC /* Build configuration list for PBXNativeTarget "Alfardan-Dev" */;
+			buildPhases = (
+				2D1A63FE29B9F79000075AFC /* Sources */,
+				2D1A640A29B9F79000075AFC /* Frameworks */,
+				2D1A640D29B9F79000075AFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alfardan-Dev";
+			packageProductDependencies = (
+				2D1A63FB29B9F79000075AFC /* Realm */,
+				2D1A63FD29B9F79000075AFC /* RealmSwift */,
+			);
+			productName = Alfardan;
+			productReference = 2D1A641429B9F79000075AFC /* Alfardan-Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D1A641529B9F7BF00075AFC /* Alfardan-Staging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D1A642C29B9F7BF00075AFC /* Build configuration list for PBXNativeTarget "Alfardan-Staging" */;
+			buildPhases = (
+				2D1A641929B9F7BF00075AFC /* Sources */,
+				2D1A642529B9F7BF00075AFC /* Frameworks */,
+				2D1A642829B9F7BF00075AFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alfardan-Staging";
+			packageProductDependencies = (
+				2D1A641629B9F7BF00075AFC /* Realm */,
+				2D1A641829B9F7BF00075AFC /* RealmSwift */,
+			);
+			productName = Alfardan;
+			productReference = 2D1A642F29B9F7BF00075AFC /* Alfardan-Staging.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D1A636B29B9F27800075AFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					2D1A637229B9F27800075AFC = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					2D1A638229B9F27900075AFC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 2D1A637229B9F27800075AFC;
+					};
+					2D1A638C29B9F27900075AFC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 2D1A637229B9F27800075AFC;
+					};
+				};
+			};
+			buildConfigurationList = 2D1A636E29B9F27800075AFC /* Build configuration list for PBXProject "Alfardan" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D1A636A29B9F27800075AFC;
+			packageReferences = (
+				2D1A63BB29B9F6A300075AFC /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 2D1A637429B9F27800075AFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D1A637229B9F27800075AFC /* Alfardan */,
+				2D1A641529B9F7BF00075AFC /* Alfardan-Staging */,
+				2D1A63FA29B9F79000075AFC /* Alfardan-Dev */,
+				2D1A638229B9F27900075AFC /* AlfardanTests */,
+				2D1A638C29B9F27900075AFC /* AlfardanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D1A637129B9F27800075AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1A637E29B9F27900075AFC /* Preview Assets.xcassets in Resources */,
+				2D1A63C329B9F70900075AFC /* EnvironmentVariables.plist in Resources */,
+				2D1A637B29B9F27900075AFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1A638129B9F27900075AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1A638B29B9F27900075AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1A640D29B9F79000075AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1A640E29B9F79000075AFC /* Preview Assets.xcassets in Resources */,
+				2D1A640F29B9F79000075AFC /* EnvironmentVariables.plist in Resources */,
+				2D1A641029B9F79000075AFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1A642829B9F7BF00075AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1A642929B9F7BF00075AFC /* Preview Assets.xcassets in Resources */,
+				2D1A642A29B9F7BF00075AFC /* EnvironmentVariables.plist in Resources */,
+				2D1A642B29B9F7BF00075AFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D1A636F29B9F27800075AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1A63B229B9F4C700075AFC /* UserDefaultInfo.swift in Sources */,
+				2D1A63B629B9F50100075AFC /* Strings.swift in Sources */,
+				2D1A63AE29B9F4A100075AFC /* APIManager.swift in Sources */,
+				2D1A63B029B9F4B700075AFC /* DatabaseService.swift in Sources */,
+				2D1A637929B9F27800075AFC /* ContentView.swift in Sources */,
+				2D1A63AC29B9F48000075AFC /* AppState.swift in Sources */,
+				2D1A63BA29B9F56700075AFC /* APIResponseProtocol.swift in Sources */,
+				2D1A63B829B9F55900075AFC /* APIRequestProtocol.swift in Sources */,
+				2D1A63A329B9F3F700075AFC /* EnvironmentManager.swift in Sources */,
+				2D1A637729B9F27800075AFC /* AlfardanApp.swift in Sources */,
+				2D1A63A929B9F44D00075AFC /* APIEndpoints.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1A637F29B9F27900075AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1A638829B9F27900075AFC /* AlfardanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1A638929B9F27900075AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1A639429B9F27900075AFC /* AlfardanUITestsLaunchTests.swift in Sources */,
+				2D1A639229B9F27900075AFC /* AlfardanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1A63FE29B9F79000075AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1A63FF29B9F79000075AFC /* UserDefaultInfo.swift in Sources */,
+				2D1A640029B9F79000075AFC /* Strings.swift in Sources */,
+				2D1A640129B9F79000075AFC /* APIManager.swift in Sources */,
+				2D1A640229B9F79000075AFC /* DatabaseService.swift in Sources */,
+				2D1A640329B9F79000075AFC /* ContentView.swift in Sources */,
+				2D1A640429B9F79000075AFC /* AppState.swift in Sources */,
+				2D1A640529B9F79000075AFC /* APIResponseProtocol.swift in Sources */,
+				2D1A640629B9F79000075AFC /* APIRequestProtocol.swift in Sources */,
+				2D1A640729B9F79000075AFC /* EnvironmentManager.swift in Sources */,
+				2D1A640829B9F79000075AFC /* AlfardanApp.swift in Sources */,
+				2D1A640929B9F79000075AFC /* APIEndpoints.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1A641929B9F7BF00075AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1A641A29B9F7BF00075AFC /* UserDefaultInfo.swift in Sources */,
+				2D1A641B29B9F7BF00075AFC /* Strings.swift in Sources */,
+				2D1A641C29B9F7BF00075AFC /* APIManager.swift in Sources */,
+				2D1A641D29B9F7BF00075AFC /* DatabaseService.swift in Sources */,
+				2D1A641E29B9F7BF00075AFC /* ContentView.swift in Sources */,
+				2D1A641F29B9F7BF00075AFC /* AppState.swift in Sources */,
+				2D1A642029B9F7BF00075AFC /* APIResponseProtocol.swift in Sources */,
+				2D1A642129B9F7BF00075AFC /* APIRequestProtocol.swift in Sources */,
+				2D1A642229B9F7BF00075AFC /* EnvironmentManager.swift in Sources */,
+				2D1A642329B9F7BF00075AFC /* AlfardanApp.swift in Sources */,
+				2D1A642429B9F7BF00075AFC /* APIEndpoints.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D1A638529B9F27900075AFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D1A637229B9F27800075AFC /* Alfardan */;
+			targetProxy = 2D1A638429B9F27900075AFC /* PBXContainerItemProxy */;
+		};
+		2D1A638F29B9F27900075AFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D1A637229B9F27800075AFC /* Alfardan */;
+			targetProxy = 2D1A638E29B9F27900075AFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2D1A639529B9F27900075AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D1A639629B9F27900075AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D1A639829B9F27900075AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Alfardan/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Alfardan/Resources/InfoPlists/Alfardan-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.Alfardan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D1A639929B9F27900075AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Alfardan/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Alfardan/Resources/InfoPlists/Alfardan-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.Alfardan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D1A639B29B9F27900075AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.AlfardanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alfardan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Alfardan";
+			};
+			name = Debug;
+		};
+		2D1A639C29B9F27900075AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.AlfardanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alfardan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Alfardan";
+			};
+			name = Release;
+		};
+		2D1A639E29B9F27900075AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.AlfardanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alfardan;
+			};
+			name = Debug;
+		};
+		2D1A639F29B9F27900075AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.AlfardanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alfardan;
+			};
+			name = Release;
+		};
+		2D1A641229B9F79000075AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Alfardan/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Alfardan/Resources/InfoPlists/Alfardan-Dev-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.Alfardan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D1A641329B9F79000075AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Alfardan/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Alfardan/Resources/InfoPlists/Alfardan-Dev-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.Alfardan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D1A642D29B9F7BF00075AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Alfardan/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Alfardan/Resources/InfoPlists/Alfardan-Staging-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.Alfardan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D1A642E29B9F7BF00075AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Alfardan/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Alfardan/Resources/InfoPlists/Alfardan-Staging-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.Alfardan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D1A636E29B9F27800075AFC /* Build configuration list for PBXProject "Alfardan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1A639529B9F27900075AFC /* Debug */,
+				2D1A639629B9F27900075AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D1A639729B9F27900075AFC /* Build configuration list for PBXNativeTarget "Alfardan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1A639829B9F27900075AFC /* Debug */,
+				2D1A639929B9F27900075AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D1A639A29B9F27900075AFC /* Build configuration list for PBXNativeTarget "AlfardanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1A639B29B9F27900075AFC /* Debug */,
+				2D1A639C29B9F27900075AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D1A639D29B9F27900075AFC /* Build configuration list for PBXNativeTarget "AlfardanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1A639E29B9F27900075AFC /* Debug */,
+				2D1A639F29B9F27900075AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D1A641129B9F79000075AFC /* Build configuration list for PBXNativeTarget "Alfardan-Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1A641229B9F79000075AFC /* Debug */,
+				2D1A641329B9F79000075AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D1A642C29B9F7BF00075AFC /* Build configuration list for PBXNativeTarget "Alfardan-Staging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1A642D29B9F7BF00075AFC /* Debug */,
+				2D1A642E29B9F7BF00075AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2D1A63BB29B9F6A300075AFC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.36.0;
+			};
+		};
+		2D1A63FC29B9F79000075AFC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.36.0;
+			};
+		};
+		2D1A641729B9F7BF00075AFC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.36.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D1A63BC29B9F6A300075AFC /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D1A63BB29B9F6A300075AFC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2D1A63BE29B9F6A300075AFC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D1A63BB29B9F6A300075AFC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		2D1A63FB29B9F79000075AFC /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D1A63FC29B9F79000075AFC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2D1A63FD29B9F79000075AFC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D1A63FC29B9F79000075AFC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		2D1A641629B9F7BF00075AFC /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D1A641729B9F7BF00075AFC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2D1A641829B9F7BF00075AFC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D1A641729B9F7BF00075AFC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2D1A636B29B9F27800075AFC /* Project object */;
+}
