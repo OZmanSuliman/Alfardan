@@ -1,0 +1,52 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+before_all do
+  update_fastlane
+  xcversion(version: "14.1")
+end
+
+platform :ios do
+
+
+  lane :dev do   
+build_app(scheme: "Alfardan-Dev",
+skip_archive: true,
+destination: "name=iPhone 14,OS=16.1")
+
+  end
+
+
+  lane :staging do
+build_app(scheme: "Alfardan-Staging",
+skip_archive: true,
+destination: "name=iPhone 14,OS=16.1")
+#upload to TestFlight or any alternative platform
+
+  end
+
+
+  lane :release do
+build_app(scheme: "Alfardan",
+skip_archive: true,
+destination: "name=iPhone 14,OS=16.1")
+#upload to App Store
+
+  end
+
+  
+end
