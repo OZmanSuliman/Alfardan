@@ -14,13 +14,42 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Second-Bg" translatesAutoresizingMaskIntoConstraints="NO" id="hbK-1E-xtt">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <view alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZKL-I7-6r1">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Second-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Yea-vQ-Wca">
+                                <rect key="frame" x="151.66666666666666" y="381" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Nbh-M1-m4B"/>
+                                    <constraint firstAttribute="height" constant="90" id="vuO-Y2-YXG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hbK-1E-xtt" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="4Vp-Cy-vr3"/>
+                            <constraint firstItem="Yea-vQ-Wca" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6o2-zr-XxW"/>
+                            <constraint firstItem="Yea-vQ-Wca" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7eB-de-I7K"/>
+                            <constraint firstItem="hbK-1E-xtt" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="AUI-Gj-DAJ"/>
+                            <constraint firstItem="hbK-1E-xtt" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="GEz-vB-rDy"/>
+                            <constraint firstAttribute="bottom" secondItem="hbK-1E-xtt" secondAttribute="bottom" id="dWj-oe-AyS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="51.145038167938928" y="374.64788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Second-Bg" width="375" height="812"/>
+        <image name="Second-logo" width="90" height="90"/>
+    </resources>
 </document>

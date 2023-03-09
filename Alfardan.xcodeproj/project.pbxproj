@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2D1A637729B9F27800075AFC /* AlfardanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A637629B9F27800075AFC /* AlfardanApp.swift */; };
-		2D1A637929B9F27800075AFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A637829B9F27800075AFC /* ContentView.swift */; };
 		2D1A637B29B9F27900075AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A637A29B9F27900075AFC /* Assets.xcassets */; };
 		2D1A637E29B9F27900075AFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A637D29B9F27900075AFC /* Preview Assets.xcassets */; };
 		2D1A638829B9F27900075AFC /* AlfardanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A638729B9F27900075AFC /* AlfardanTests.swift */; };
@@ -30,7 +29,6 @@
 		2D1A640029B9F79000075AFC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B529B9F50100075AFC /* Strings.swift */; };
 		2D1A640129B9F79000075AFC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AD29B9F4A100075AFC /* APIManager.swift */; };
 		2D1A640229B9F79000075AFC /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AF29B9F4B700075AFC /* DatabaseService.swift */; };
-		2D1A640329B9F79000075AFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A637829B9F27800075AFC /* ContentView.swift */; };
 		2D1A640429B9F79000075AFC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AB29B9F48000075AFC /* AppState.swift */; };
 		2D1A640529B9F79000075AFC /* APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B929B9F56700075AFC /* APIResponseProtocol.swift */; };
 		2D1A640629B9F79000075AFC /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B729B9F55900075AFC /* APIRequestProtocol.swift */; };
@@ -46,7 +44,6 @@
 		2D1A641B29B9F7BF00075AFC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B529B9F50100075AFC /* Strings.swift */; };
 		2D1A641C29B9F7BF00075AFC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AD29B9F4A100075AFC /* APIManager.swift */; };
 		2D1A641D29B9F7BF00075AFC /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AF29B9F4B700075AFC /* DatabaseService.swift */; };
-		2D1A641E29B9F7BF00075AFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A637829B9F27800075AFC /* ContentView.swift */; };
 		2D1A641F29B9F7BF00075AFC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AB29B9F48000075AFC /* AppState.swift */; };
 		2D1A642029B9F7BF00075AFC /* APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B929B9F56700075AFC /* APIResponseProtocol.swift */; };
 		2D1A642129B9F7BF00075AFC /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B729B9F55900075AFC /* APIRequestProtocol.swift */; };
@@ -73,6 +70,30 @@
 		2DBAA63529B9FE7100DDB587 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63429B9FE7100DDB587 /* LoginRouter.swift */; };
 		2DBAA63629B9FE7100DDB587 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63429B9FE7100DDB587 /* LoginRouter.swift */; };
 		2DBAA63729B9FE7100DDB587 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63429B9FE7100DDB587 /* LoginRouter.swift */; };
+		2DBAA63E29BA098400DDB587 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63D29BA098400DDB587 /* CustomTextfield.swift */; };
+		2DBAA63F29BA098400DDB587 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63D29BA098400DDB587 /* CustomTextfield.swift */; };
+		2DBAA64029BA098400DDB587 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63D29BA098400DDB587 /* CustomTextfield.swift */; };
+		2DBAA64229BA099A00DDB587 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA64129BA099A00DDB587 /* CustomSecureField.swift */; };
+		2DBAA64329BA099A00DDB587 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA64129BA099A00DDB587 /* CustomSecureField.swift */; };
+		2DBAA64429BA099A00DDB587 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA64129BA099A00DDB587 /* CustomSecureField.swift */; };
+		2DBAA66C29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */; };
+		2DBAA66D29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */; };
+		2DBAA66E29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */; };
+		2DBAA67529BA09DF00DDB587 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA65129BA09DF00DDB587 /* OpenSans-Regular.ttf */; };
+		2DBAA67629BA09DF00DDB587 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA65129BA09DF00DDB587 /* OpenSans-Regular.ttf */; };
+		2DBAA67729BA09DF00DDB587 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA65129BA09DF00DDB587 /* OpenSans-Regular.ttf */; };
+		2DBAA67F29BA0A8700DDB587 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA67E29BA0A8700DDB587 /* ButtonStyle.swift */; };
+		2DBAA68029BA0A8700DDB587 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA67E29BA0A8700DDB587 /* ButtonStyle.swift */; };
+		2DBAA68129BA0A8700DDB587 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA67E29BA0A8700DDB587 /* ButtonStyle.swift */; };
+		2DBAA68329BA0AA900DDB587 /* CustomTextM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA68229BA0AA900DDB587 /* CustomTextM.swift */; };
+		2DBAA68429BA0AA900DDB587 /* CustomTextM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA68229BA0AA900DDB587 /* CustomTextM.swift */; };
+		2DBAA68529BA0AA900DDB587 /* CustomTextM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA68229BA0AA900DDB587 /* CustomTextM.swift */; };
+		2DBAA68629BA0C7800DDB587 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A63A429B9F40E00075AFC /* Launch Screen.storyboard */; };
+		2DBAA68729BA0C7800DDB587 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A63A429B9F40E00075AFC /* Launch Screen.storyboard */; };
+		2DBAA68829BA0C7900DDB587 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A63A429B9F40E00075AFC /* Launch Screen.storyboard */; };
+		2DBAA68A29BA395900DDB587 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA68929BA395900DDB587 /* UserDB.swift */; };
+		2DBAA68B29BA395900DDB587 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA68929BA395900DDB587 /* UserDB.swift */; };
+		2DBAA68C29BA395900DDB587 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA68929BA395900DDB587 /* UserDB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +116,6 @@
 /* Begin PBXFileReference section */
 		2D1A637329B9F27800075AFC /* Alfardan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alfardan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1A637629B9F27800075AFC /* AlfardanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfardanApp.swift; sourceTree = "<group>"; };
-		2D1A637829B9F27800075AFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D1A637A29B9F27900075AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D1A637D29B9F27900075AFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D1A638329B9F27900075AFC /* AlfardanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlfardanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +149,13 @@
 		2DBAA63A29B9FE8300DDB587 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		2DBAA63B29B9FE8300DDB587 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		2DBAA63C29B9FE8300DDB587 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		2DBAA63D29BA098400DDB587 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
+		2DBAA64129BA099A00DDB587 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		2DBAA65129BA09DF00DDB587 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		2DBAA67E29BA0A8700DDB587 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		2DBAA68229BA0AA900DDB587 /* CustomTextM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextM.swift; sourceTree = "<group>"; };
+		2DBAA68929BA395900DDB587 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +326,8 @@
 			children = (
 				2D1A63B429B9F4ED00075AFC /* Extentions */,
 				2D1A63B529B9F50100075AFC /* Strings.swift */,
+				2DBAA67E29BA0A8700DDB587 /* ButtonStyle.swift */,
+				2DBAA68229BA0AA900DDB587 /* CustomTextM.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -313,6 +342,7 @@
 		2D1A63C029B9F6B300075AFC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2DBAA64529BA09DF00DDB587 /* Fonts */,
 				2D1A63C129B9F6C300075AFC /* InfoPlists */,
 				2D1A637C29B9F27900075AFC /* Preview Content */,
 				2D1A637A29B9F27900075AFC /* Assets.xcassets */,
@@ -334,6 +364,8 @@
 		2D1A643329B9FB5000075AFC /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				2DBAA63D29BA098400DDB587 /* CustomTextfield.swift */,
+				2DBAA64129BA099A00DDB587 /* CustomSecureField.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -342,6 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				2DBAA62329B9FE2E00DDB587 /* User.swift */,
+				2DBAA68929BA395900DDB587 /* UserDB.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -351,7 +384,6 @@
 			children = (
 				2DBAA63829B9FE7D00DDB587 /* Splash */,
 				2DBAA62729B9FE4600DDB587 /* Login */,
-				2D1A637829B9F27800075AFC /* ContentView.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -376,6 +408,15 @@
 				2DBAA63C29B9FE8300DDB587 /* SplashRouter.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		2DBAA64529BA09DF00DDB587 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */,
+				2DBAA65129BA09DF00DDB587 /* OpenSans-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,9 +574,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBAA68829BA0C7900DDB587 /* Launch Screen.storyboard in Resources */,
 				2D1A637E29B9F27900075AFC /* Preview Assets.xcassets in Resources */,
 				2D1A63C329B9F70900075AFC /* EnvironmentVariables.plist in Resources */,
+				2DBAA66C29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */,
 				2D1A637B29B9F27900075AFC /* Assets.xcassets in Resources */,
+				2DBAA67529BA09DF00DDB587 /* OpenSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,9 +601,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBAA68729BA0C7800DDB587 /* Launch Screen.storyboard in Resources */,
 				2D1A640E29B9F79000075AFC /* Preview Assets.xcassets in Resources */,
 				2D1A640F29B9F79000075AFC /* EnvironmentVariables.plist in Resources */,
+				2DBAA66E29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */,
 				2D1A641029B9F79000075AFC /* Assets.xcassets in Resources */,
+				2DBAA67729BA09DF00DDB587 /* OpenSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,9 +614,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBAA68629BA0C7800DDB587 /* Launch Screen.storyboard in Resources */,
 				2D1A642929B9F7BF00075AFC /* Preview Assets.xcassets in Resources */,
 				2D1A642A29B9F7BF00075AFC /* EnvironmentVariables.plist in Resources */,
+				2DBAA66D29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */,
 				2D1A642B29B9F7BF00075AFC /* Assets.xcassets in Resources */,
+				2DBAA67629BA09DF00DDB587 /* OpenSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,17 +634,21 @@
 				2D1A63B629B9F50100075AFC /* Strings.swift in Sources */,
 				2DBAA62D29B9FE5E00DDB587 /* LoginInteractor.swift in Sources */,
 				2D1A63AE29B9F4A100075AFC /* APIManager.swift in Sources */,
+				2DBAA63E29BA098400DDB587 /* CustomTextfield.swift in Sources */,
 				2D1A63B029B9F4B700075AFC /* DatabaseService.swift in Sources */,
-				2D1A637929B9F27800075AFC /* ContentView.swift in Sources */,
 				2DBAA63529B9FE7100DDB587 /* LoginRouter.swift in Sources */,
 				2D1A63AC29B9F48000075AFC /* AppState.swift in Sources */,
 				2D1A63BA29B9F56700075AFC /* APIResponseProtocol.swift in Sources */,
 				2D1A63B829B9F55900075AFC /* APIRequestProtocol.swift in Sources */,
+				2DBAA64229BA099A00DDB587 /* CustomSecureField.swift in Sources */,
 				2DBAA63129B9FE6600DDB587 /* LoginPresenter.swift in Sources */,
 				2DBAA62429B9FE2E00DDB587 /* User.swift in Sources */,
 				2D1A63A329B9F3F700075AFC /* EnvironmentManager.swift in Sources */,
 				2DBAA62929B9FE5300DDB587 /* LoginView.swift in Sources */,
+				2DBAA67F29BA0A8700DDB587 /* ButtonStyle.swift in Sources */,
+				2DBAA68A29BA395900DDB587 /* UserDB.swift in Sources */,
 				2D1A637729B9F27800075AFC /* AlfardanApp.swift in Sources */,
+				2DBAA68329BA0AA900DDB587 /* CustomTextM.swift in Sources */,
 				2D1A63A929B9F44D00075AFC /* APIEndpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,17 +678,21 @@
 				2D1A640029B9F79000075AFC /* Strings.swift in Sources */,
 				2DBAA62F29B9FE5E00DDB587 /* LoginInteractor.swift in Sources */,
 				2D1A640129B9F79000075AFC /* APIManager.swift in Sources */,
+				2DBAA64029BA098400DDB587 /* CustomTextfield.swift in Sources */,
 				2D1A640229B9F79000075AFC /* DatabaseService.swift in Sources */,
-				2D1A640329B9F79000075AFC /* ContentView.swift in Sources */,
 				2DBAA63729B9FE7100DDB587 /* LoginRouter.swift in Sources */,
 				2D1A640429B9F79000075AFC /* AppState.swift in Sources */,
 				2D1A640529B9F79000075AFC /* APIResponseProtocol.swift in Sources */,
 				2D1A640629B9F79000075AFC /* APIRequestProtocol.swift in Sources */,
+				2DBAA64429BA099A00DDB587 /* CustomSecureField.swift in Sources */,
 				2DBAA63329B9FE6600DDB587 /* LoginPresenter.swift in Sources */,
 				2DBAA62629B9FE2E00DDB587 /* User.swift in Sources */,
 				2D1A640729B9F79000075AFC /* EnvironmentManager.swift in Sources */,
 				2DBAA62B29B9FE5300DDB587 /* LoginView.swift in Sources */,
+				2DBAA68129BA0A8700DDB587 /* ButtonStyle.swift in Sources */,
+				2DBAA68C29BA395900DDB587 /* UserDB.swift in Sources */,
 				2D1A640829B9F79000075AFC /* AlfardanApp.swift in Sources */,
+				2DBAA68529BA0AA900DDB587 /* CustomTextM.swift in Sources */,
 				2D1A640929B9F79000075AFC /* APIEndpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,17 +705,21 @@
 				2D1A641B29B9F7BF00075AFC /* Strings.swift in Sources */,
 				2DBAA62E29B9FE5E00DDB587 /* LoginInteractor.swift in Sources */,
 				2D1A641C29B9F7BF00075AFC /* APIManager.swift in Sources */,
+				2DBAA63F29BA098400DDB587 /* CustomTextfield.swift in Sources */,
 				2D1A641D29B9F7BF00075AFC /* DatabaseService.swift in Sources */,
-				2D1A641E29B9F7BF00075AFC /* ContentView.swift in Sources */,
 				2DBAA63629B9FE7100DDB587 /* LoginRouter.swift in Sources */,
 				2D1A641F29B9F7BF00075AFC /* AppState.swift in Sources */,
 				2D1A642029B9F7BF00075AFC /* APIResponseProtocol.swift in Sources */,
 				2D1A642129B9F7BF00075AFC /* APIRequestProtocol.swift in Sources */,
+				2DBAA64329BA099A00DDB587 /* CustomSecureField.swift in Sources */,
 				2DBAA63229B9FE6600DDB587 /* LoginPresenter.swift in Sources */,
 				2DBAA62529B9FE2E00DDB587 /* User.swift in Sources */,
 				2D1A642229B9F7BF00075AFC /* EnvironmentManager.swift in Sources */,
 				2DBAA62A29B9FE5300DDB587 /* LoginView.swift in Sources */,
+				2DBAA68029BA0A8700DDB587 /* ButtonStyle.swift in Sources */,
+				2DBAA68B29BA395900DDB587 /* UserDB.swift in Sources */,
 				2D1A642329B9F7BF00075AFC /* AlfardanApp.swift in Sources */,
+				2DBAA68429BA0AA900DDB587 /* CustomTextM.swift in Sources */,
 				2D1A642429B9F7BF00075AFC /* APIEndpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -47,10 +47,5 @@ A concurrent queue added to the AppState Singleton class to manage the usage of 
 ## CI/CD
 Using fastlane and Github Actions, pipeline runs on one of the 3 environments depending on the destination branch.
 
-## Multi Orientation
-The app provide Landscape and portrait modes
-
-
-
 
 cheers 🍻
