@@ -10,8 +10,6 @@ each environment of these has its own specific configuratuin.
 to switch between environments just change scheme in XCode.
 Environment is been controlled at the run time by the EnvironmentManager.
 
-##Unit Tests & UITest
-
 
 ##Architecture
 VIPER architecture is applied on this project
@@ -28,13 +26,10 @@ VIPER architecture is applied on this project
  assemble the components and manage the navigation
 
 
-## Data Source
+##TextField Validation
 
 
-#### remote
-
-### local
-
+##Unit Tests & UITest
 
 
 ## Memory Management :
