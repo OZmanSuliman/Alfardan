@@ -23,7 +23,7 @@ struct LoginView<interactorProtocol: LoginInteractorProtocol, presenterProtocol:
                 .resizable()
                 .overlay(
                     Rectangle()
-                        .foregroundColor(Color.black.opacity(0.65))
+                        .foregroundColor(Color.black.opacity(0.1))
                 )
                 .ignoresSafeArea(.all)
                 .onTapGesture {
@@ -34,14 +34,16 @@ struct LoginView<interactorProtocol: LoginInteractorProtocol, presenterProtocol:
                 ProgressView()
                     .tint(.white)
             case let .failed(error):
-                EmptyView()
+                Rectangle()
+                    .foregroundColor(.clear)
                     .alert(error ?? Strings.error.fullString(), isPresented: $isPresented) {
                         Button(Strings.ok.fullString().uppercased(), role: .cancel) {
                         store.stateCalculator = .idle
                     }
                 }
             case let .loaded(user):
-                EmptyView()
+                Rectangle()
+                    .foregroundColor(.clear)
                     .alert(Strings.welcome.fullString(withParameters: "\(user)"), isPresented: $isPresented) {
                     Button(Strings.ok.fullString().uppercased(), role: .cancel) {
                         store.stateCalculator = .idle
@@ -62,6 +64,7 @@ struct LoginView<interactorProtocol: LoginInteractorProtocol, presenterProtocol:
                     VStack(alignment: .center, spacing: 30) {
                         VStack(alignment: .center) {
                             EntryField(sfSymbolName: "envelope", placeHolder: "Email Address", prompt: presenter.emailPrompt, field: $presenter.email)
+                                .accessibilityIdentifier("emailTextField")
                             
                         }
                         VStack(alignment: .center) {

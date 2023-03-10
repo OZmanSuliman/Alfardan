@@ -17,11 +17,8 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hbK-1E-xtt">
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                            </imageView>
-                            <view clipsSubviews="YES" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZKL-I7-6r1">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="logo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yea-vQ-Wca">
                                 <rect key="frame" x="152.66666666666666" y="403.66666666666669" width="124.99999999999997" height="125.00000000000006"/>
                                 <constraints>
@@ -37,12 +34,8 @@
                             <constraint firstItem="Yea-vQ-Wca" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6o2-zr-XxW"/>
                             <constraint firstItem="Yea-vQ-Wca" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7eB-de-I7K"/>
                             <constraint firstItem="hbK-1E-xtt" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="AUI-Gj-DAJ"/>
-                            <constraint firstItem="ZKL-I7-6r1" firstAttribute="centerX" secondItem="hbK-1E-xtt" secondAttribute="centerX" id="FlT-zg-VuY"/>
                             <constraint firstItem="hbK-1E-xtt" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="GEz-vB-rDy"/>
-                            <constraint firstItem="ZKL-I7-6r1" firstAttribute="centerY" secondItem="hbK-1E-xtt" secondAttribute="centerY" id="NrO-nx-1uQ"/>
                             <constraint firstAttribute="bottom" secondItem="hbK-1E-xtt" secondAttribute="bottom" id="dWj-oe-AyS"/>
-                            <constraint firstItem="ZKL-I7-6r1" firstAttribute="height" secondItem="hbK-1E-xtt" secondAttribute="height" id="hX9-Wg-dcY"/>
-                            <constraint firstItem="ZKL-I7-6r1" firstAttribute="width" secondItem="hbK-1E-xtt" secondAttribute="width" id="j80-2K-YUr"/>
                         </constraints>
                     </view>
                 </viewController>

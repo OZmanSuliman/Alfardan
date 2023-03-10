@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Alfardan.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2D1A637229B9F27800075AFC"
+               BuildableName = "Alfardan.app"
+               BlueprintName = "Alfardan"
+               ReferencedContainer = "container:Alfardan.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,6 +42,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2D1A638C29B9F27900075AFC"
+               BuildableName = "AlfardanUITests.xctest"
+               BlueprintName = "AlfardanUITests"
+               ReferencedContainer = "container:Alfardan.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2D1A638229B9F27900075AFC"
+               BuildableName = "AlfardanTests.xctest"
+               BlueprintName = "AlfardanTests"
+               ReferencedContainer = "container:Alfardan.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

@@ -26,7 +26,7 @@ struct SplashView<interactorProtocol: SplashInteractorProtocol, presenterProtoco
                     .resizable()
                     .overlay(
                         Rectangle()
-                            .foregroundColor(Color.black.opacity(0.65))
+                            .foregroundColor(Color.black.opacity(0.1))
                     )
                     .ignoresSafeArea()
                 VStack(alignment: .center) {

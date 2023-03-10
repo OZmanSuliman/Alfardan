@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2D1A637729B9F27800075AFC /* AlfardanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A637629B9F27800075AFC /* AlfardanApp.swift */; };
 		2D1A637E29B9F27900075AFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A637D29B9F27900075AFC /* Preview Assets.xcassets */; };
-		2D1A638829B9F27900075AFC /* AlfardanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A638729B9F27900075AFC /* AlfardanTests.swift */; };
-		2D1A639229B9F27900075AFC /* AlfardanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A639129B9F27900075AFC /* AlfardanUITests.swift */; };
 		2D1A639429B9F27900075AFC /* AlfardanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A639329B9F27900075AFC /* AlfardanUITestsLaunchTests.swift */; };
 		2D1A63A329B9F3F700075AFC /* EnvironmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63A229B9F3F700075AFC /* EnvironmentManager.swift */; };
 		2D1A63A929B9F44D00075AFC /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63A829B9F44D00075AFC /* APIEndpoints.swift */; };
@@ -58,6 +56,79 @@
 		2D834F9429BB074500B2AFBB /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F9329BB074500B2AFBB /* EntryField.swift */; };
 		2D834F9529BB074500B2AFBB /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F9329BB074500B2AFBB /* EntryField.swift */; };
 		2D834F9629BB074500B2AFBB /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F9329BB074500B2AFBB /* EntryField.swift */; };
+		2D834F9829BB133600B2AFBB /* SplashViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F9729BB133600B2AFBB /* SplashViewUITests.swift */; };
+		2D834F9D29BB147E00B2AFBB /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2D834F9C29BB147E00B2AFBB /* Realm */; };
+		2D834F9F29BB147E00B2AFBB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2D834F9E29BB147E00B2AFBB /* RealmSwift */; };
+		2D834FA429BB167C00B2AFBB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A63A429B9F40E00075AFC /* Launch Screen.storyboard */; };
+		2D834FA529BB167C00B2AFBB /* EnvironmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63A229B9F3F700075AFC /* EnvironmentManager.swift */; };
+		2D834FA629BB167C00B2AFBB /* AlfardanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A637629B9F27800075AFC /* AlfardanApp.swift */; };
+		2D834FB229BB168F00B2AFBB /* APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B929B9F56700075AFC /* APIResponseProtocol.swift */; };
+		2D834FB329BB168F00B2AFBB /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63A29B9FE8300DDB587 /* SplashInteractor.swift */; };
+		2D834FB429BB168F00B2AFBB /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA69229BA3C3000DDB587 /* LoginRequest.swift */; };
+		2D834FB529BB168F00B2AFBB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AD29B9F4A100075AFC /* APIManager.swift */; };
+		2D834FB629BB168F00B2AFBB /* UserDefaultInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B129B9F4C700075AFC /* UserDefaultInfo.swift */; };
+		2D834FB829BB168F00B2AFBB /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63A829B9F44D00075AFC /* APIEndpoints.swift */; };
+		2D834FB929BB168F00B2AFBB /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63C29B9FE8300DDB587 /* SplashRouter.swift */; };
+		2D834FBA29BB168F00B2AFBB /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B729B9F55900075AFC /* APIRequestProtocol.swift */; };
+		2D834FBB29BB168F00B2AFBB /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63929B9FE8300DDB587 /* SplashPresenter.swift */; };
+		2D834FBC29BB168F00B2AFBB /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AF29B9F4B700075AFC /* DatabaseService.swift */; };
+		2D834FBD29BB168F00B2AFBB /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63B29B9FE8300DDB587 /* SplashView.swift */; };
+		2D834FBE29BB168F00B2AFBB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AB29B9F48000075AFC /* AppState.swift */; };
+		2D834FBF29BB168F00B2AFBB /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F9329BB074500B2AFBB /* EntryField.swift */; };
+		2D834FC029BB168F00B2AFBB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA62329B9FE2E00DDB587 /* User.swift */; };
+		2D834FC129BB169A00B2AFBB /* ViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F8F29BAF93100B2AFBB /* ViewExtention.swift */; };
+		2D834FC229BB169A00B2AFBB /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63029B9FE6600DDB587 /* LoginPresenter.swift */; };
+		2D834FC329BB169A00B2AFBB /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA62C29B9FE5E00DDB587 /* LoginInteractor.swift */; };
+		2D834FC429BB169A00B2AFBB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA62829B9FE5300DDB587 /* LoginView.swift */; };
+		2D834FC529BB169A00B2AFBB /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA67E29BA0A8700DDB587 /* ButtonStyle.swift */; };
+		2D834FC629BB169A00B2AFBB /* CustomTextM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA68229BA0AA900DDB587 /* CustomTextM.swift */; };
+		2D834FC729BB169A00B2AFBB /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63429B9FE7100DDB587 /* LoginRouter.swift */; };
+		2D834FC829BB169A00B2AFBB /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B529B9F50100075AFC /* Strings.swift */; };
+		2D834FCB29BB1B9D00B2AFBB /* MockSplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FCA29BB1B9C00B2AFBB /* MockSplashInteractor.swift */; };
+		2D834FCC29BB1B9D00B2AFBB /* MockSplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FCA29BB1B9C00B2AFBB /* MockSplashInteractor.swift */; };
+		2D834FCD29BB1B9D00B2AFBB /* MockSplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FCA29BB1B9C00B2AFBB /* MockSplashInteractor.swift */; };
+		2D834FCE29BB1B9D00B2AFBB /* MockSplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FCA29BB1B9C00B2AFBB /* MockSplashInteractor.swift */; };
+		2D834FD229BB1C0A00B2AFBB /* SplashInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FD129BB1C0A00B2AFBB /* SplashInteractorTests.swift */; };
+		2D834FD429BB1C6600B2AFBB /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2D834FD329BB1C6600B2AFBB /* Realm */; };
+		2D834FD629BB1C6600B2AFBB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2D834FD529BB1C6600B2AFBB /* RealmSwift */; };
+		2D834FD729BB1D4500B2AFBB /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63B29B9FE8300DDB587 /* SplashView.swift */; };
+		2D834FD829BB1D4500B2AFBB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AD29B9F4A100075AFC /* APIManager.swift */; };
+		2D834FD929BB1D4500B2AFBB /* APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B929B9F56700075AFC /* APIResponseProtocol.swift */; };
+		2D834FDA29BB1D4500B2AFBB /* EnvironmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63A229B9F3F700075AFC /* EnvironmentManager.swift */; };
+		2D834FDB29BB1D4500B2AFBB /* AlfardanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A637629B9F27800075AFC /* AlfardanApp.swift */; };
+		2D834FDC29BB1D4500B2AFBB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A63A429B9F40E00075AFC /* Launch Screen.storyboard */; };
+		2D834FDD29BB1D4500B2AFBB /* UserDefaultInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B129B9F4C700075AFC /* UserDefaultInfo.swift */; };
+		2D834FDE29BB1D4500B2AFBB /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63A29B9FE8300DDB587 /* SplashInteractor.swift */; };
+		2D834FDF29BB1D4500B2AFBB /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63929B9FE8300DDB587 /* SplashPresenter.swift */; };
+		2D834FE029BB1D4500B2AFBB /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63A829B9F44D00075AFC /* APIEndpoints.swift */; };
+		2D834FE129BB1D4500B2AFBB /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AF29B9F4B700075AFC /* DatabaseService.swift */; };
+		2D834FE229BB1D4500B2AFBB /* MockSplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FCA29BB1B9C00B2AFBB /* MockSplashInteractor.swift */; };
+		2D834FE329BB1D4500B2AFBB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63AB29B9F48000075AFC /* AppState.swift */; };
+		2D834FE429BB1D4500B2AFBB /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63C29B9FE8300DDB587 /* SplashRouter.swift */; };
+		2D834FE529BB1D4500B2AFBB /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B729B9F55900075AFC /* APIRequestProtocol.swift */; };
+		2D834FE629BB1D5300B2AFBB /* CustomTextM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA68229BA0AA900DDB587 /* CustomTextM.swift */; };
+		2D834FE729BB1D5300B2AFBB /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63029B9FE6600DDB587 /* LoginPresenter.swift */; };
+		2D834FE829BB1D5300B2AFBB /* ViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F8F29BAF93100B2AFBB /* ViewExtention.swift */; };
+		2D834FE929BB1D5300B2AFBB /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA62C29B9FE5E00DDB587 /* LoginInteractor.swift */; };
+		2D834FEA29BB1D5300B2AFBB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA62329B9FE2E00DDB587 /* User.swift */; };
+		2D834FEB29BB1D5300B2AFBB /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63429B9FE7100DDB587 /* LoginRouter.swift */; };
+		2D834FEC29BB1D5300B2AFBB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA62829B9FE5300DDB587 /* LoginView.swift */; };
+		2D834FED29BB1D5300B2AFBB /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1A63B529B9F50100075AFC /* Strings.swift */; };
+		2D834FEE29BB1D5300B2AFBB /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA67E29BA0A8700DDB587 /* ButtonStyle.swift */; };
+		2D834FEF29BB1D5300B2AFBB /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F9329BB074500B2AFBB /* EntryField.swift */; };
+		2D834FF029BB1D6500B2AFBB /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA69229BA3C3000DDB587 /* LoginRequest.swift */; };
+		2D834FF129BB1D6D00B2AFBB /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA68E29BA3C2500DDB587 /* LoginResponse.swift */; };
+		2D834FF229BB1D6D00B2AFBB /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA68E29BA3C2500DDB587 /* LoginResponse.swift */; };
+		2D834FF529BB1DCE00B2AFBB /* MockApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FF429BB1DCE00B2AFBB /* MockApiManager.swift */; };
+		2D834FF629BB1DCE00B2AFBB /* MockApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FF429BB1DCE00B2AFBB /* MockApiManager.swift */; };
+		2D834FF729BB1DCE00B2AFBB /* MockApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FF429BB1DCE00B2AFBB /* MockApiManager.swift */; };
+		2D834FF829BB1DCE00B2AFBB /* MockApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FF429BB1DCE00B2AFBB /* MockApiManager.swift */; };
+		2D834FF929BB1DCE00B2AFBB /* MockApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FF429BB1DCE00B2AFBB /* MockApiManager.swift */; };
+		2D834FFB29BB1DF000B2AFBB /* MockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FFA29BB1DF000B2AFBB /* MockPresenter.swift */; };
+		2D834FFC29BB1DF000B2AFBB /* MockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FFA29BB1DF000B2AFBB /* MockPresenter.swift */; };
+		2D834FFD29BB1DF000B2AFBB /* MockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FFA29BB1DF000B2AFBB /* MockPresenter.swift */; };
+		2D834FFE29BB1DF000B2AFBB /* MockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FFA29BB1DF000B2AFBB /* MockPresenter.swift */; };
+		2D834FFF29BB1DF000B2AFBB /* MockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834FFA29BB1DF000B2AFBB /* MockPresenter.swift */; };
 		2DBAA62429B9FE2E00DDB587 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA62329B9FE2E00DDB587 /* User.swift */; };
 		2DBAA62529B9FE2E00DDB587 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA62329B9FE2E00DDB587 /* User.swift */; };
 		2DBAA62629B9FE2E00DDB587 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA62329B9FE2E00DDB587 /* User.swift */; };
@@ -73,12 +144,6 @@
 		2DBAA63529B9FE7100DDB587 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63429B9FE7100DDB587 /* LoginRouter.swift */; };
 		2DBAA63629B9FE7100DDB587 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63429B9FE7100DDB587 /* LoginRouter.swift */; };
 		2DBAA63729B9FE7100DDB587 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63429B9FE7100DDB587 /* LoginRouter.swift */; };
-		2DBAA66C29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */; };
-		2DBAA66D29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */; };
-		2DBAA66E29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */; };
-		2DBAA67529BA09DF00DDB587 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA65129BA09DF00DDB587 /* OpenSans-Regular.ttf */; };
-		2DBAA67629BA09DF00DDB587 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA65129BA09DF00DDB587 /* OpenSans-Regular.ttf */; };
-		2DBAA67729BA09DF00DDB587 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA65129BA09DF00DDB587 /* OpenSans-Regular.ttf */; };
 		2DBAA67F29BA0A8700DDB587 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA67E29BA0A8700DDB587 /* ButtonStyle.swift */; };
 		2DBAA68029BA0A8700DDB587 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA67E29BA0A8700DDB587 /* ButtonStyle.swift */; };
 		2DBAA68129BA0A8700DDB587 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA67E29BA0A8700DDB587 /* ButtonStyle.swift */; };
@@ -126,6 +191,13 @@
 			remoteGlobalIDString = 2D1A637229B9F27800075AFC;
 			remoteInfo = Alfardan;
 		};
+		2D834F9929BB144100B2AFBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D1A636B29B9F27800075AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D1A63FA29B9F79000075AFC;
+			remoteInfo = "Alfardan-Dev";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -134,9 +206,7 @@
 		2D1A637A29B9F27900075AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D1A637D29B9F27900075AFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D1A638329B9F27900075AFC /* AlfardanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlfardanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D1A638729B9F27900075AFC /* AlfardanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfardanTests.swift; sourceTree = "<group>"; };
 		2D1A638D29B9F27900075AFC /* AlfardanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlfardanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D1A639129B9F27900075AFC /* AlfardanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfardanUITests.swift; sourceTree = "<group>"; };
 		2D1A639329B9F27900075AFC /* AlfardanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfardanUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2D1A63A229B9F3F700075AFC /* EnvironmentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentManager.swift; sourceTree = "<group>"; };
 		2D1A63A429B9F40E00075AFC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -157,6 +227,11 @@
 		2D1A643629B9FBA100075AFC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2D834F8F29BAF93100B2AFBB /* ViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtention.swift; sourceTree = "<group>"; };
 		2D834F9329BB074500B2AFBB /* EntryField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryField.swift; sourceTree = "<group>"; };
+		2D834F9729BB133600B2AFBB /* SplashViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewUITests.swift; sourceTree = "<group>"; };
+		2D834FCA29BB1B9C00B2AFBB /* MockSplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSplashInteractor.swift; sourceTree = "<group>"; };
+		2D834FD129BB1C0A00B2AFBB /* SplashInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractorTests.swift; sourceTree = "<group>"; };
+		2D834FF429BB1DCE00B2AFBB /* MockApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiManager.swift; sourceTree = "<group>"; };
+		2D834FFA29BB1DF000B2AFBB /* MockPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPresenter.swift; sourceTree = "<group>"; };
 		2DBAA62329B9FE2E00DDB587 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2DBAA62829B9FE5300DDB587 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		2DBAA62C29B9FE5E00DDB587 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
@@ -166,8 +241,6 @@
 		2DBAA63A29B9FE8300DDB587 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		2DBAA63B29B9FE8300DDB587 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		2DBAA63C29B9FE8300DDB587 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
-		2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		2DBAA65129BA09DF00DDB587 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		2DBAA67E29BA0A8700DDB587 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		2DBAA68229BA0AA900DDB587 /* CustomTextM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextM.swift; sourceTree = "<group>"; };
 		2DBAA68E29BA3C2500DDB587 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
@@ -188,6 +261,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D834FD629BB1C6600B2AFBB /* RealmSwift in Frameworks */,
+				2D834FD429BB1C6600B2AFBB /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +270,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D834F9F29BB147E00B2AFBB /* RealmSwift in Frameworks */,
+				2D834F9D29BB147E00B2AFBB /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +304,7 @@
 				2D1A638629B9F27900075AFC /* AlfardanTests */,
 				2D1A639029B9F27900075AFC /* AlfardanUITests */,
 				2D1A637429B9F27800075AFC /* Products */,
+				2D834F9B29BB147E00B2AFBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,7 +344,7 @@
 		2D1A638629B9F27900075AFC /* AlfardanTests */ = {
 			isa = PBXGroup;
 			children = (
-				2D1A638729B9F27900075AFC /* AlfardanTests.swift */,
+				2D834FD129BB1C0A00B2AFBB /* SplashInteractorTests.swift */,
 			);
 			path = AlfardanTests;
 			sourceTree = "<group>";
@@ -274,7 +352,7 @@
 		2D1A639029B9F27900075AFC /* AlfardanUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2D1A639129B9F27900075AFC /* AlfardanUITests.swift */,
+				2D834F9729BB133600B2AFBB /* SplashViewUITests.swift */,
 				2D1A639329B9F27900075AFC /* AlfardanUITestsLaunchTests.swift */,
 			);
 			path = AlfardanUITests;
@@ -330,6 +408,7 @@
 		2D1A63AA29B9F47200075AFC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2D834FF329BB1DC200B2AFBB /* Mock */,
 				2D1A63AB29B9F48000075AFC /* AppState.swift */,
 				2D1A63AD29B9F4A100075AFC /* APIManager.swift */,
 				2D1A63AF29B9F4B700075AFC /* DatabaseService.swift */,
@@ -360,7 +439,6 @@
 		2D1A63C029B9F6B300075AFC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2DBAA64529BA09DF00DDB587 /* Fonts */,
 				2D1A63C129B9F6C300075AFC /* InfoPlists */,
 				2D1A637C29B9F27900075AFC /* Preview Content */,
 				2D1A637A29B9F27900075AFC /* Assets.xcassets */,
@@ -404,6 +482,30 @@
 			path = Flows;
 			sourceTree = "<group>";
 		};
+		2D834F9B29BB147E00B2AFBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D834FC929BB1B9300B2AFBB /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				2D834FCA29BB1B9C00B2AFBB /* MockSplashInteractor.swift */,
+				2D834FFA29BB1DF000B2AFBB /* MockPresenter.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		2D834FF329BB1DC200B2AFBB /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				2D834FF429BB1DCE00B2AFBB /* MockApiManager.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		2DBAA62729B9FE4600DDB587 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,21 +520,13 @@
 		2DBAA63829B9FE7D00DDB587 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				2D834FC929BB1B9300B2AFBB /* Mock */,
 				2DBAA63B29B9FE8300DDB587 /* SplashView.swift */,
 				2DBAA63A29B9FE8300DDB587 /* SplashInteractor.swift */,
 				2DBAA63929B9FE8300DDB587 /* SplashPresenter.swift */,
 				2DBAA63C29B9FE8300DDB587 /* SplashRouter.swift */,
 			);
 			path = Splash;
-			sourceTree = "<group>";
-		};
-		2DBAA64529BA09DF00DDB587 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */,
-				2DBAA65129BA09DF00DDB587 /* OpenSans-Regular.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		2DBAA68D29BA3C0D00DDB587 /* Login */ = {
@@ -482,6 +576,10 @@
 				2D1A638529B9F27900075AFC /* PBXTargetDependency */,
 			);
 			name = AlfardanTests;
+			packageProductDependencies = (
+				2D834FD329BB1C6600B2AFBB /* Realm */,
+				2D834FD529BB1C6600B2AFBB /* RealmSwift */,
+			);
 			productName = AlfardanTests;
 			productReference = 2D1A638329B9F27900075AFC /* AlfardanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -498,8 +596,13 @@
 			);
 			dependencies = (
 				2D1A638F29B9F27900075AFC /* PBXTargetDependency */,
+				2D834F9A29BB144100B2AFBB /* PBXTargetDependency */,
 			);
 			name = AlfardanUITests;
+			packageProductDependencies = (
+				2D834F9C29BB147E00B2AFBB /* Realm */,
+				2D834F9E29BB147E00B2AFBB /* RealmSwift */,
+			);
 			productName = AlfardanUITests;
 			productReference = 2D1A638D29B9F27900075AFC /* AlfardanUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -565,7 +668,6 @@
 					};
 					2D1A638C29B9F27900075AFC = {
 						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 2D1A637229B9F27800075AFC;
 					};
 				};
 			};
@@ -602,9 +704,7 @@
 				2DBAA68829BA0C7900DDB587 /* Launch Screen.storyboard in Resources */,
 				2D1A637E29B9F27900075AFC /* Preview Assets.xcassets in Resources */,
 				2D1A63C329B9F70900075AFC /* EnvironmentVariables.plist in Resources */,
-				2DBAA66C29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */,
 				2DBAA6AE29BA7B3B00DDB587 /* Assets.xcassets in Resources */,
-				2DBAA67529BA09DF00DDB587 /* OpenSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +712,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D834FDC29BB1D4500B2AFBB /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +720,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D834FA429BB167C00B2AFBB /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,9 +731,7 @@
 				2DBAA68729BA0C7800DDB587 /* Launch Screen.storyboard in Resources */,
 				2D1A640E29B9F79000075AFC /* Preview Assets.xcassets in Resources */,
 				2D1A640F29B9F79000075AFC /* EnvironmentVariables.plist in Resources */,
-				2DBAA66E29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */,
 				2DBAA6B029BA7B3C00DDB587 /* Assets.xcassets in Resources */,
-				2DBAA67729BA09DF00DDB587 /* OpenSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,9 +742,7 @@
 				2DBAA68629BA0C7800DDB587 /* Launch Screen.storyboard in Resources */,
 				2D1A642929B9F7BF00075AFC /* Preview Assets.xcassets in Resources */,
 				2D1A642A29B9F7BF00075AFC /* EnvironmentVariables.plist in Resources */,
-				2DBAA66D29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */,
 				2DBAA6AF29BA7B3B00DDB587 /* Assets.xcassets in Resources */,
-				2DBAA67629BA09DF00DDB587 /* OpenSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,7 +767,9 @@
 				2D1A63B829B9F55900075AFC /* APIRequestProtocol.swift in Sources */,
 				2DBAA6A729BA709A00DDB587 /* SplashPresenter.swift in Sources */,
 				2DBAA63129B9FE6600DDB587 /* LoginPresenter.swift in Sources */,
+				2D834FF529BB1DCE00B2AFBB /* MockApiManager.swift in Sources */,
 				2D834F9029BAF93100B2AFBB /* ViewExtention.swift in Sources */,
+				2D834FFB29BB1DF000B2AFBB /* MockPresenter.swift in Sources */,
 				2DBAA62429B9FE2E00DDB587 /* User.swift in Sources */,
 				2DBAA6A429BA708500DDB587 /* SplashRouter.swift in Sources */,
 				2D1A63A329B9F3F700075AFC /* EnvironmentManager.swift in Sources */,
@@ -680,6 +780,7 @@
 				2D1A63A929B9F44D00075AFC /* APIEndpoints.swift in Sources */,
 				2DBAA68F29BA3C2500DDB587 /* LoginResponse.swift in Sources */,
 				2DBAA69329BA3C3000DDB587 /* LoginRequest.swift in Sources */,
+				2D834FCB29BB1B9D00B2AFBB /* MockSplashInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,7 +788,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D1A638829B9F27900075AFC /* AlfardanTests.swift in Sources */,
+				2D834FF029BB1D6500B2AFBB /* LoginRequest.swift in Sources */,
+				2D834FDD29BB1D4500B2AFBB /* UserDefaultInfo.swift in Sources */,
+				2D834FDF29BB1D4500B2AFBB /* SplashPresenter.swift in Sources */,
+				2D834FD829BB1D4500B2AFBB /* APIManager.swift in Sources */,
+				2D834FE029BB1D4500B2AFBB /* APIEndpoints.swift in Sources */,
+				2D834FEC29BB1D5300B2AFBB /* LoginView.swift in Sources */,
+				2D834FF129BB1D6D00B2AFBB /* LoginResponse.swift in Sources */,
+				2D834FF829BB1DCE00B2AFBB /* MockApiManager.swift in Sources */,
+				2D834FDA29BB1D4500B2AFBB /* EnvironmentManager.swift in Sources */,
+				2D834FE129BB1D4500B2AFBB /* DatabaseService.swift in Sources */,
+				2D834FEE29BB1D5300B2AFBB /* ButtonStyle.swift in Sources */,
+				2D834FDE29BB1D4500B2AFBB /* SplashInteractor.swift in Sources */,
+				2D834FEB29BB1D5300B2AFBB /* LoginRouter.swift in Sources */,
+				2D834FED29BB1D5300B2AFBB /* Strings.swift in Sources */,
+				2D834FE929BB1D5300B2AFBB /* LoginInteractor.swift in Sources */,
+				2D834FEF29BB1D5300B2AFBB /* EntryField.swift in Sources */,
+				2D834FE529BB1D4500B2AFBB /* APIRequestProtocol.swift in Sources */,
+				2D834FFE29BB1DF000B2AFBB /* MockPresenter.swift in Sources */,
+				2D834FE629BB1D5300B2AFBB /* CustomTextM.swift in Sources */,
+				2D834FD229BB1C0A00B2AFBB /* SplashInteractorTests.swift in Sources */,
+				2D834FE329BB1D4500B2AFBB /* AppState.swift in Sources */,
+				2D834FE729BB1D5300B2AFBB /* LoginPresenter.swift in Sources */,
+				2D834FE429BB1D4500B2AFBB /* SplashRouter.swift in Sources */,
+				2D834FD929BB1D4500B2AFBB /* APIResponseProtocol.swift in Sources */,
+				2D834FDB29BB1D4500B2AFBB /* AlfardanApp.swift in Sources */,
+				2D834FE829BB1D5300B2AFBB /* ViewExtention.swift in Sources */,
+				2D834FD729BB1D4500B2AFBB /* SplashView.swift in Sources */,
+				2D834FE229BB1D4500B2AFBB /* MockSplashInteractor.swift in Sources */,
+				2D834FEA29BB1D5300B2AFBB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,7 +825,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D1A639429B9F27900075AFC /* AlfardanUITestsLaunchTests.swift in Sources */,
-				2D1A639229B9F27900075AFC /* AlfardanUITests.swift in Sources */,
+				2D834FB329BB168F00B2AFBB /* SplashInteractor.swift in Sources */,
+				2D834FBD29BB168F00B2AFBB /* SplashView.swift in Sources */,
+				2D834FC129BB169A00B2AFBB /* ViewExtention.swift in Sources */,
+				2D834FC229BB169A00B2AFBB /* LoginPresenter.swift in Sources */,
+				2D834FC329BB169A00B2AFBB /* LoginInteractor.swift in Sources */,
+				2D834FF229BB1D6D00B2AFBB /* LoginResponse.swift in Sources */,
+				2D834FF929BB1DCE00B2AFBB /* MockApiManager.swift in Sources */,
+				2D834FC829BB169A00B2AFBB /* Strings.swift in Sources */,
+				2D834FC429BB169A00B2AFBB /* LoginView.swift in Sources */,
+				2D834FFF29BB1DF000B2AFBB /* MockPresenter.swift in Sources */,
+				2D834FC629BB169A00B2AFBB /* CustomTextM.swift in Sources */,
+				2D834FBE29BB168F00B2AFBB /* AppState.swift in Sources */,
+				2D834FC529BB169A00B2AFBB /* ButtonStyle.swift in Sources */,
+				2D834FB929BB168F00B2AFBB /* SplashRouter.swift in Sources */,
+				2D834FA529BB167C00B2AFBB /* EnvironmentManager.swift in Sources */,
+				2D834FBA29BB168F00B2AFBB /* APIRequestProtocol.swift in Sources */,
+				2D834FB829BB168F00B2AFBB /* APIEndpoints.swift in Sources */,
+				2D834FC729BB169A00B2AFBB /* LoginRouter.swift in Sources */,
+				2D834FC029BB168F00B2AFBB /* User.swift in Sources */,
+				2D834FCE29BB1B9D00B2AFBB /* MockSplashInteractor.swift in Sources */,
+				2D834FBC29BB168F00B2AFBB /* DatabaseService.swift in Sources */,
+				2D834FB529BB168F00B2AFBB /* APIManager.swift in Sources */,
+				2D834FB629BB168F00B2AFBB /* UserDefaultInfo.swift in Sources */,
+				2D834F9829BB133600B2AFBB /* SplashViewUITests.swift in Sources */,
+				2D834FB229BB168F00B2AFBB /* APIResponseProtocol.swift in Sources */,
+				2D834FA629BB167C00B2AFBB /* AlfardanApp.swift in Sources */,
+				2D834FBB29BB168F00B2AFBB /* SplashPresenter.swift in Sources */,
+				2D834FBF29BB168F00B2AFBB /* EntryField.swift in Sources */,
+				2D834FB429BB168F00B2AFBB /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,7 +875,9 @@
 				2D1A640629B9F79000075AFC /* APIRequestProtocol.swift in Sources */,
 				2DBAA6A529BA709900DDB587 /* SplashPresenter.swift in Sources */,
 				2DBAA63329B9FE6600DDB587 /* LoginPresenter.swift in Sources */,
+				2D834FF729BB1DCE00B2AFBB /* MockApiManager.swift in Sources */,
 				2D834F9229BAF93100B2AFBB /* ViewExtention.swift in Sources */,
+				2D834FFD29BB1DF000B2AFBB /* MockPresenter.swift in Sources */,
 				2DBAA62629B9FE2E00DDB587 /* User.swift in Sources */,
 				2DBAA6A229BA708400DDB587 /* SplashRouter.swift in Sources */,
 				2D1A640729B9F79000075AFC /* EnvironmentManager.swift in Sources */,
@@ -729,6 +888,7 @@
 				2D1A640929B9F79000075AFC /* APIEndpoints.swift in Sources */,
 				2DBAA69129BA3C2500DDB587 /* LoginResponse.swift in Sources */,
 				2DBAA69529BA3C3000DDB587 /* LoginRequest.swift in Sources */,
+				2D834FCD29BB1B9D00B2AFBB /* MockSplashInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -750,7 +910,9 @@
 				2D1A642129B9F7BF00075AFC /* APIRequestProtocol.swift in Sources */,
 				2DBAA6A629BA709A00DDB587 /* SplashPresenter.swift in Sources */,
 				2DBAA63229B9FE6600DDB587 /* LoginPresenter.swift in Sources */,
+				2D834FF629BB1DCE00B2AFBB /* MockApiManager.swift in Sources */,
 				2D834F9129BAF93100B2AFBB /* ViewExtention.swift in Sources */,
+				2D834FFC29BB1DF000B2AFBB /* MockPresenter.swift in Sources */,
 				2DBAA62529B9FE2E00DDB587 /* User.swift in Sources */,
 				2DBAA6A329BA708500DDB587 /* SplashRouter.swift in Sources */,
 				2D1A642229B9F7BF00075AFC /* EnvironmentManager.swift in Sources */,
@@ -761,6 +923,7 @@
 				2D1A642429B9F7BF00075AFC /* APIEndpoints.swift in Sources */,
 				2DBAA69029BA3C2500DDB587 /* LoginResponse.swift in Sources */,
 				2DBAA69429BA3C3000DDB587 /* LoginRequest.swift in Sources */,
+				2D834FCC29BB1B9D00B2AFBB /* MockSplashInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,6 +939,11 @@
 			isa = PBXTargetDependency;
 			target = 2D1A637229B9F27800075AFC /* Alfardan */;
 			targetProxy = 2D1A638E29B9F27900075AFC /* PBXContainerItemProxy */;
+		};
+		2D834F9A29BB144100B2AFBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D1A63FA29B9F79000075AFC /* Alfardan-Dev */;
+			targetProxy = 2D834F9929BB144100B2AFBB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1007,10 +1175,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oz.AlfardanUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Alfardan;
 			};
 			name = Debug;
 		};
@@ -1025,10 +1193,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oz.AlfardanUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Alfardan;
 			};
 			name = Release;
 		};
@@ -1271,6 +1439,26 @@
 		2D1A641829B9F7BF00075AFC /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2D1A641729B9F7BF00075AFC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		2D834F9C29BB147E00B2AFBB /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D1A63BB29B9F6A300075AFC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2D834F9E29BB147E00B2AFBB /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D1A63BB29B9F6A300075AFC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		2D834FD329BB1C6600B2AFBB /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D1A63BB29B9F6A300075AFC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2D834FD529BB1C6600B2AFBB /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D1A63BB29B9F6A300075AFC /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

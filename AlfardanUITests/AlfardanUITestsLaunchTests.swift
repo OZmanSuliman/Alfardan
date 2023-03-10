@@ -18,7 +18,7 @@ final class AlfardanUITestsLaunchTests: XCTestCase {
     }
 
     func testLaunch() throws {
-        let app = XCUIApplication()
+        let app = XCUIApplication(bundleIdentifier: "com.oz.Alfardan")
         app.launch()
 
         // Insert steps here to perform after app launch but before taking a screenshot,
