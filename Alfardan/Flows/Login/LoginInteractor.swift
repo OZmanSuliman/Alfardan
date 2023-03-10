@@ -19,7 +19,8 @@ protocol LoginInteractorProtocol: ObservableObject {
 class LoginInteractor<Presenter: LoginPresenterProtocol>: LoginInteractorProtocol {
     private let apiManager: ApiManagerProtocol
     private var presenter: Presenter
-
+    @StateObject var store = AppState.shared
+    
     init(apiManager: ApiManagerProtocol, presenter: Presenter) {
         self.apiManager = apiManager
         self.presenter = presenter
@@ -28,20 +29,24 @@ class LoginInteractor<Presenter: LoginPresenterProtocol>: LoginInteractorProtoco
 
 extension LoginInteractor {
     func login(email: String, password: String) {
-        presenter.startLoading()
-        let user = User(password: password, email: email)
-        let request = LoginRequest(user: user)
-        apiManager.apiRequest(request) { [weak self] (response: LoginResponse?, error, statusCode) in
-
-            if let email = user.email, statusCode == 200 {
-                UserDefaultsEnum.userEmail = email
-                self?.presenter.didLoggedIn(user: user)
-            } else {
-                self?.presenter.didLoggedInWithError(error: error)
+        presenter.didHasAttemptedToLogIn()
+        if presenter.isSignUpComplete && store.stateCalculator != .loading {
+            presenter.startLoading()
+            let user = User(password: password, email: email)
+            let request = LoginRequest(user: user)
+            apiManager.apiRequest(request) { [weak self] (response: LoginResponse?, error, statusCode) in
+                print(statusCode ?? 0)
+                if let email = user.email, statusCode == 200 {
+                    UserDefaultsEnum.userEmail = email
+                    self?.presenter.didLoggedIn(user: user)
+                } else {
+                    self?.presenter.didLoggedInWithError(error: error)
+                }
+            } WithApiFailure: { [weak self] error in
+                self?.presenter.didLoggedInWithError(error: error.localizedDescription)
+                print(error)
             }
-        } WithApiFailure: { [weak self] error in
-            self?.presenter.didLoggedInWithError(error: error.localizedDescription)
-            print(error)
         }
     }
+    
 }

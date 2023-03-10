@@ -19,7 +19,7 @@ struct SplashView<interactorProtocol: SplashInteractorProtocol, presenterProtoco
     }
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 // Bg
                 Image(Strings.bg.fullString())
@@ -38,15 +38,15 @@ struct SplashView<interactorProtocol: SplashInteractorProtocol, presenterProtoco
                 }
                 .ignoresSafeArea()
             }
-            .background(
-                NavigationLink(destination: LoginRouter().createModule(),
-                               isActive: $presenter.shouldNavigate) { EmptyView() }
-            )
             .ignoresSafeArea()
             .onAppear {
                 interactor.getInfo()
             }
             .navigationBarHidden(true)
+            .navigationDestination(
+                 isPresented: $presenter.shouldNavigate) {
+                     LoginRouter().createModule()
+                 }
         }
     }
 }

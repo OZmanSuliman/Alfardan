@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let realmDatabaseVersion = 3
+let realmDatabaseVersion = 1
 
 // MARK: - AlfardanApp
 
@@ -16,7 +16,6 @@ struct AlfardanApp: App {
     let splash = SplashRouter().createModule()
     init() {
         DatabaseService.configureDataMigration()
-        print("\(EnvironmentManager.shared.getBaseUrl())")
     }
 
     var body: some Scene {

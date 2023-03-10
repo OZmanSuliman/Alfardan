@@ -12,10 +12,8 @@ import SwiftUI
 struct LoginView<interactorProtocol: LoginInteractorProtocol, presenterProtocol: LoginPresenterProtocol>: View {
     @StateObject var store = AppState.shared
     let interactor: interactorProtocol
-    let presenter: presenterProtocol
+    @ObservedObject var presenter: presenterProtocol
     
-    @State private var email = ""
-    @State private var password = ""
     @State private var isPresented = true
     
     var body: some View {
@@ -63,28 +61,19 @@ struct LoginView<interactorProtocol: LoginInteractorProtocol, presenterProtocol:
                 VStack(spacing: 15) {
                     VStack(alignment: .center, spacing: 30) {
                         VStack(alignment: .center) {
-                            CustomTextfield(placeholder:
-                                Text(Strings.email.fullString()),
-                                fontName: Strings.openSansRegular.fullString(),
-                                fontSize: 18,
-                                fontColor: Color.white.opacity(0.3),
-                                username: $email)
-                            Divider()
-                                .background(Color.white)
+                            EntryField(sfSymbolName: "envelope", placeHolder: "Email Address", prompt: presenter.emailPrompt, field: $presenter.email)
+                            
                         }
                         VStack(alignment: .center) {
-                            CustomSecureField(placeholder:
-                                Text(Strings.password.fullString()),
-                                fontName: Strings.openSansRegular.fullString(),
-                                fontSize: 18,
-                                fontColor: Color.white.opacity(0.3),
-                                password: $password)
+                            EntryField(sfSymbolName: "lock", placeHolder: "Password", prompt: presenter.passwordPrompt, field: $presenter.password, isSecure: true)
                             Divider()
                                 .background(Color.white)
                         }
                     }
                     HStack {
-                        Button(action: {}) {
+                        Button(action: {
+                            hideKeyboard()
+                        }) {
                             Text(Strings.requestNewPassword.fullString())
                                 .modifier(CustomTextM(fontName: Strings.openSansRegular.fullString(), fontSize: 14, fontColor: Color.white.opacity(0.65)))
                         }
@@ -94,20 +83,25 @@ struct LoginView<interactorProtocol: LoginInteractorProtocol, presenterProtocol:
                 .padding(.horizontal, 35)
 
                 // Button
-                Button(action: {self.interactor.login(email: self.email, password: self.password)}) {
+                Button(action: {
+                    hideKeyboard()
+                    self.interactor.login(email: presenter.email, password: presenter.password)
+                }) {
                     Text(Strings.login.fullString().uppercased())
                         .modifier(CustomTextM(fontName: Strings.openSansBold.fullString(), fontSize: 14, fontColor: Color.black))
                         .modifier(ButtonStyle(buttonHeight: 60, buttonColor: Color.white, buttonRadius: 10))
                 }
-                .disabled(store.stateCalculator == .loading )
+                .opacity(presenter.isSignUpComplete && store.stateCalculator != .loading ? 1 : 0.6)
                 .padding(.horizontal, 35)
                 .padding(.top, 30)
                 Spacer()
-                // SighnUp
+                // SignUp
                 VStack(spacing: 15) {
                     Text(Strings.needAnAccount.fullString())
                         .modifier(CustomTextM(fontName: Strings.openSansBold.fullString(), fontSize: 14, fontColor: Color.white.opacity(0.5)))
-                    Button(action: {}) {
+                    Button(action: {
+                        hideKeyboard()
+                    }) {
                         Text(Strings.signup.fullString().uppercased())
                             .modifier(CustomTextM(fontName: Strings.openSansBold.fullString(), fontSize: 14, fontColor: Color.white))
                             .modifier(ButtonStyle(buttonHeight: 60, buttonColor: Color.white.opacity(0.15), buttonRadius: 10))

@@ -55,6 +55,9 @@
 		2D834F9029BAF93100B2AFBB /* ViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F8F29BAF93100B2AFBB /* ViewExtention.swift */; };
 		2D834F9129BAF93100B2AFBB /* ViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F8F29BAF93100B2AFBB /* ViewExtention.swift */; };
 		2D834F9229BAF93100B2AFBB /* ViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F8F29BAF93100B2AFBB /* ViewExtention.swift */; };
+		2D834F9429BB074500B2AFBB /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F9329BB074500B2AFBB /* EntryField.swift */; };
+		2D834F9529BB074500B2AFBB /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F9329BB074500B2AFBB /* EntryField.swift */; };
+		2D834F9629BB074500B2AFBB /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D834F9329BB074500B2AFBB /* EntryField.swift */; };
 		2DBAA62429B9FE2E00DDB587 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA62329B9FE2E00DDB587 /* User.swift */; };
 		2DBAA62529B9FE2E00DDB587 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA62329B9FE2E00DDB587 /* User.swift */; };
 		2DBAA62629B9FE2E00DDB587 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA62329B9FE2E00DDB587 /* User.swift */; };
@@ -70,12 +73,6 @@
 		2DBAA63529B9FE7100DDB587 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63429B9FE7100DDB587 /* LoginRouter.swift */; };
 		2DBAA63629B9FE7100DDB587 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63429B9FE7100DDB587 /* LoginRouter.swift */; };
 		2DBAA63729B9FE7100DDB587 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63429B9FE7100DDB587 /* LoginRouter.swift */; };
-		2DBAA63E29BA098400DDB587 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63D29BA098400DDB587 /* CustomTextfield.swift */; };
-		2DBAA63F29BA098400DDB587 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63D29BA098400DDB587 /* CustomTextfield.swift */; };
-		2DBAA64029BA098400DDB587 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA63D29BA098400DDB587 /* CustomTextfield.swift */; };
-		2DBAA64229BA099A00DDB587 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA64129BA099A00DDB587 /* CustomSecureField.swift */; };
-		2DBAA64329BA099A00DDB587 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA64129BA099A00DDB587 /* CustomSecureField.swift */; };
-		2DBAA64429BA099A00DDB587 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBAA64129BA099A00DDB587 /* CustomSecureField.swift */; };
 		2DBAA66C29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */; };
 		2DBAA66D29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */; };
 		2DBAA66E29BA09DF00DDB587 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */; };
@@ -159,6 +156,7 @@
 		2D1A643229B9FA5E00075AFC /* Alfardan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alfardan-Info.plist"; sourceTree = "<group>"; };
 		2D1A643629B9FBA100075AFC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2D834F8F29BAF93100B2AFBB /* ViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtention.swift; sourceTree = "<group>"; };
+		2D834F9329BB074500B2AFBB /* EntryField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryField.swift; sourceTree = "<group>"; };
 		2DBAA62329B9FE2E00DDB587 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2DBAA62829B9FE5300DDB587 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		2DBAA62C29B9FE5E00DDB587 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
@@ -168,8 +166,6 @@
 		2DBAA63A29B9FE8300DDB587 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		2DBAA63B29B9FE8300DDB587 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		2DBAA63C29B9FE8300DDB587 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
-		2DBAA63D29BA098400DDB587 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
-		2DBAA64129BA099A00DDB587 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		2DBAA64E29BA09DF00DDB587 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		2DBAA65129BA09DF00DDB587 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		2DBAA67E29BA0A8700DDB587 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
@@ -386,8 +382,7 @@
 		2D1A643329B9FB5000075AFC /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				2DBAA63D29BA098400DDB587 /* CustomTextfield.swift */,
-				2DBAA64129BA099A00DDB587 /* CustomSecureField.swift */,
+				2D834F9329BB074500B2AFBB /* EntryField.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -660,20 +655,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D834F9429BB074500B2AFBB /* EntryField.swift in Sources */,
 				2D1A63B229B9F4C700075AFC /* UserDefaultInfo.swift in Sources */,
 				2D1A63B629B9F50100075AFC /* Strings.swift in Sources */,
 				2DBAA6AA29BA709E00DDB587 /* SplashInteractor.swift in Sources */,
 				2DBAA6A029BA423D00DDB587 /* SplashView.swift in Sources */,
 				2DBAA62D29B9FE5E00DDB587 /* LoginInteractor.swift in Sources */,
 				2D1A63AE29B9F4A100075AFC /* APIManager.swift in Sources */,
-				2DBAA63E29BA098400DDB587 /* CustomTextfield.swift in Sources */,
 				2D1A63B029B9F4B700075AFC /* DatabaseService.swift in Sources */,
 				2DBAA63529B9FE7100DDB587 /* LoginRouter.swift in Sources */,
 				2D1A63AC29B9F48000075AFC /* AppState.swift in Sources */,
 				2D1A63BA29B9F56700075AFC /* APIResponseProtocol.swift in Sources */,
 				2D1A63B829B9F55900075AFC /* APIRequestProtocol.swift in Sources */,
 				2DBAA6A729BA709A00DDB587 /* SplashPresenter.swift in Sources */,
-				2DBAA64229BA099A00DDB587 /* CustomSecureField.swift in Sources */,
 				2DBAA63129B9FE6600DDB587 /* LoginPresenter.swift in Sources */,
 				2D834F9029BAF93100B2AFBB /* ViewExtention.swift in Sources */,
 				2DBAA62429B9FE2E00DDB587 /* User.swift in Sources */,
@@ -710,20 +704,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D834F9629BB074500B2AFBB /* EntryField.swift in Sources */,
 				2D1A63FF29B9F79000075AFC /* UserDefaultInfo.swift in Sources */,
 				2D1A640029B9F79000075AFC /* Strings.swift in Sources */,
 				2DBAA6A929BA709D00DDB587 /* SplashInteractor.swift in Sources */,
 				2DBAA6A129BA423D00DDB587 /* SplashView.swift in Sources */,
 				2DBAA62F29B9FE5E00DDB587 /* LoginInteractor.swift in Sources */,
 				2D1A640129B9F79000075AFC /* APIManager.swift in Sources */,
-				2DBAA64029BA098400DDB587 /* CustomTextfield.swift in Sources */,
 				2D1A640229B9F79000075AFC /* DatabaseService.swift in Sources */,
 				2DBAA63729B9FE7100DDB587 /* LoginRouter.swift in Sources */,
 				2D1A640429B9F79000075AFC /* AppState.swift in Sources */,
 				2D1A640529B9F79000075AFC /* APIResponseProtocol.swift in Sources */,
 				2D1A640629B9F79000075AFC /* APIRequestProtocol.swift in Sources */,
 				2DBAA6A529BA709900DDB587 /* SplashPresenter.swift in Sources */,
-				2DBAA64429BA099A00DDB587 /* CustomSecureField.swift in Sources */,
 				2DBAA63329B9FE6600DDB587 /* LoginPresenter.swift in Sources */,
 				2D834F9229BAF93100B2AFBB /* ViewExtention.swift in Sources */,
 				2DBAA62629B9FE2E00DDB587 /* User.swift in Sources */,
@@ -743,20 +736,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D834F9529BB074500B2AFBB /* EntryField.swift in Sources */,
 				2D1A641A29B9F7BF00075AFC /* UserDefaultInfo.swift in Sources */,
 				2D1A641B29B9F7BF00075AFC /* Strings.swift in Sources */,
 				2DBAA6A829BA709D00DDB587 /* SplashInteractor.swift in Sources */,
 				2DBAA69F29BA423C00DDB587 /* SplashView.swift in Sources */,
 				2DBAA62E29B9FE5E00DDB587 /* LoginInteractor.swift in Sources */,
 				2D1A641C29B9F7BF00075AFC /* APIManager.swift in Sources */,
-				2DBAA63F29BA098400DDB587 /* CustomTextfield.swift in Sources */,
 				2D1A641D29B9F7BF00075AFC /* DatabaseService.swift in Sources */,
 				2DBAA63629B9FE7100DDB587 /* LoginRouter.swift in Sources */,
 				2D1A641F29B9F7BF00075AFC /* AppState.swift in Sources */,
 				2D1A642029B9F7BF00075AFC /* APIResponseProtocol.swift in Sources */,
 				2D1A642129B9F7BF00075AFC /* APIRequestProtocol.swift in Sources */,
 				2DBAA6A629BA709A00DDB587 /* SplashPresenter.swift in Sources */,
-				2DBAA64329BA099A00DDB587 /* CustomSecureField.swift in Sources */,
 				2DBAA63229B9FE6600DDB587 /* LoginPresenter.swift in Sources */,
 				2D834F9129BAF93100B2AFBB /* ViewExtention.swift in Sources */,
 				2DBAA62529B9FE2E00DDB587 /* User.swift in Sources */,
