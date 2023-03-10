@@ -49,10 +49,10 @@ class ApiManager: ApiManagerProtocol {
            !parameters.isEmpty {
             request.httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
         }
-            let sessionTask = URLSession(configuration: .default).dataTask(with: request) { data, _, error in
+            let sessionTask = URLSession(configuration: .default).dataTask(with: request) { data, response, error in
                 
-                if let data = data {
-                    success(Response(with: data), nil, nil)
+                if let data = data, let httpResponse = response as? HTTPURLResponse {
+                    success(Response(with: data), error?.localizedDescription, httpResponse.statusCode)
                     dispatchGroup.leave()
                 } else if let error = error {
                     failure(error)

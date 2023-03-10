@@ -3,4 +3,54 @@
    uuid = "7AA0CB6B-80D3-4F64-99DA-F0C21A6EB323"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78882576-AF63-4965-9EFA-C5AD86D94BC6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Alfardan/Flows/Splash/SplashView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "78882576-AF63-4965-9EFA-C5AD86D94BC6 - e595eec3b78f2b28"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in Alfardan_Dev.SplashView.body.getter : some"
+                  moduleName = "Alfardan-Dev"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oz/Desktop/Alfardan/Alfardan/Flows/Splash/SplashView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "808">
+               </Location>
+               <Location
+                  uuid = "78882576-AF63-4965-9EFA-C5AD86D94BC6 - 1d1c50c4664553f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.EmptyView in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in Alfardan_Dev.SplashView.body.getter : some"
+                  moduleName = "Alfardan-Dev"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oz/Desktop/Alfardan/Alfardan/Flows/Splash/SplashView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

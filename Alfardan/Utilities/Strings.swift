@@ -18,6 +18,20 @@ enum Strings: String {
     case PropertyNotOfType = "Property %@ is not of type %@"
     case networkSerialQueue
     case appStateSerialQueue
+    case bg = "background"
+    case logo
+    case email = "Email"
+    case password = "Password"
+    case openSansRegular = "OpenSans-Regular"
+    case requestNewPassword = "Request new password"
+    case login
+    case openSansBold = "OpenSans-Bold"
+    case needAnAccount = "Need an account?"
+    case signup = "sign up"
+    case error = "There is an error"
+    case ok
+    case welcome = "welcome %@"
+    
     
     func fullString(withParameters parameters: CVarArg...) -> String {
         var str = self.rawValue

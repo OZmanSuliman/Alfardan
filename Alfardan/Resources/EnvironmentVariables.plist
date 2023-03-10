@@ -5,17 +5,17 @@
 	<key>Release</key>
 	<dict>
 		<key>baseURL</key>
-		<string>https://iphonephotographyschool.com</string>
+		<string>http://app.subayuaevisa.com/api/v1</string>
 	</dict>
 	<key>Staging</key>
 	<dict>
 		<key>baseURL</key>
-		<string>https://iphonephotographyschool.com</string>
+		<string>http://app.subayuaevisa.com/api/v1</string>
 	</dict>
 	<key>Debug</key>
 	<dict>
 		<key>baseURL</key>
-		<string>https://iphonephotographyschool.com</string>
+		<string>http://app.subayuaevisa.com/api/v1</string>
 	</dict>
 </dict>
 </plist>

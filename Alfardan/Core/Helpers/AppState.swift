@@ -17,7 +17,7 @@ enum AppStateEnum: Equatable {
             return true
         case (.loading, .loading):
             return true
-        case (.failed(_), .failed(_)):
+        case (.failed, .failed):
             return true
         case (.loaded(_), .loaded(_)):
             return true
@@ -28,7 +28,7 @@ enum AppStateEnum: Equatable {
 
     case idle
     case loading
-    case failed(String)
+    case failed(String?)
     case loaded(Any)
 }
 

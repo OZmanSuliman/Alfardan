@@ -43,10 +43,10 @@ internal extension UserDefaultInfo {
 }
 
 enum UserDefaultsEnum {
-    private static var downloadedVideosInfo = UserDefaultInfo(key: "downloadedVideos", defaultValue: [Int]())
-    static var downloadedVideos: [Int] { // Date when the api tokens are saved/updated
-        get { return downloadedVideosInfo.get() }
-        set { downloadedVideosInfo.set(newValue) }
+    private static var userEmailInfo = UserDefaultInfo(key: "userEmail", defaultValue: String())
+    static var userEmail: String {
+        get { return userEmailInfo.get() }
+        set { userEmailInfo.set(newValue) }
     }
 }
 

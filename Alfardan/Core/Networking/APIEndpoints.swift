@@ -9,7 +9,7 @@ import Foundation
 
 enum APIEndpoints: String {
 
-case login = "/login"
+case login = "/country.php"
     
     /** Contains the full path to the endpoint */
     func fullPath(withParameters parameters: CVarArg...) -> String {
